@@ -39,20 +39,7 @@ const IntemListContainer = () => {
     return (
         <>
 
-            {loading ? (<h1>Cargando...</h1>) : (
-                <div>
-                    {
-                        products.map((product) => (
-                            <div key={product.id}>
-                                <h2>{product.nombre}</h2>
-                                <img src={product.img}/>
-                                <p>{product.descripción}</p>
-                                <p>Precio: {product.precio}</p>
-                            </div>
-                        ))}
-
-                </div>
-            )}
+            {loading ? (<h1>Cargando...</h1>) : (<ItemList products={products}/>)}
 
         </>
     );
