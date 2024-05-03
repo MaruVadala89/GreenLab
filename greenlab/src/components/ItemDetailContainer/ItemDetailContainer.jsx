@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { getDocs, getFirestore, doc} from 'firebase/firestore';
+import { getDocs, getFirestore, doc } from 'firebase/firestore';
 import { useParams } from 'react-router-dom';
+import ItemDetail from '../ItemDetail/ItemDetail';
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState([])
@@ -15,11 +16,11 @@ const ItemDetailContainer = () => {
         getDocs(nuevoDoc)
 
             .then((res) => {
-                
 
-                    const data = doc.data()
-                   const nuevoProducto = { id: res.id, ...data }
-                   setProduct(nuevoProducto)
+
+                const data = doc.data()
+                const nuevoProducto = { id: res.id, ...data }
+                setProduct(nuevoProducto)
 
             })
             .catch((error) => console.log(error))
@@ -30,7 +31,7 @@ const ItemDetailContainer = () => {
 
     return (
         <div>
-            {product ? <ItemDetail producto={product}/> : <p>Cargando...</p>}
+            {product ? <ItemDetail producto={product} /> : <p>Cargando...</p>}
         </div>
     );
 };
