@@ -1,15 +1,13 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 
-//6° IMPORTAR LA INSTANCIA DEL CONTEXTO
+
 import { CartContext } from '../../context/CartContext';
 
 const ItemDetail = ({ producto }) => {
 
     const [quantity, setQuantity] = useState(0)
-
-    //7° IMPLEMENTAR USECONTEXT PARA CONSUMIR EL CONTEXTO
-    const { addToCart } = useContext(CartContext) //Recibimos las funciones creadas en Cart Context.
+    const { addToCart } = useContext(CartContext) 
 
     const onAdd = (cantidad) => {
         setQuantity(cantidad)
