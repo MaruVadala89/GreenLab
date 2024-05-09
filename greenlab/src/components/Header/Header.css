@@ -1,0 +1,9 @@
+.bienvenidos {
+    background-color: beige;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+

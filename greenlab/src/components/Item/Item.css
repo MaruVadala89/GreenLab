@@ -1,0 +1,18 @@
+.link {
+    text-decoration: none;
+}
+
+
+.titulo {
+    font-size: 20px;
+    color: green;
+}
+
+.contenedor {
+    margin: auto;
+}
+
+.img {
+    margin-bottom: 10px;
+    margin-top: 25px;
+}

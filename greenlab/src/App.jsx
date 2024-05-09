@@ -1,7 +1,4 @@
 import './App.css'
-import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import IntemListContainer from './components/IntemListContainer/IntemListContainer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
@@ -11,6 +8,7 @@ import Footer from './components/Footer/Footer'
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
 import Contacto from './components/Contacto/Contacto'
+import Header from './components/Header/Header';
 
 
 function App() {
@@ -19,6 +17,9 @@ function App() {
     <>
       <BrowserRouter>
         <CartProvider>
+
+          <Header/>
+          
           <NavBoot />
 
           <Routes>
