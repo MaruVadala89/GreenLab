@@ -1,4 +1,5 @@
 import './App.css'
+import {useState, useEffect} from 'react'
 import IntemListContainer from './components/IntemListContainer/IntemListContainer'
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
@@ -6,6 +7,9 @@ import { CartProvider } from './context/CartContext';
 import NavBoot from './components/NavBoot/NavBoot'
 import Footer from './components/Footer/Footer'
 import Cart from './components/Cart/Cart';
+import Checkout from './components/Checkout/Checkout';
+import Contacto from './components/Contacto'
+
 
 function App() {
  
@@ -22,6 +26,7 @@ function App() {
       <Route path='/' element={<IntemListContainer/>}/>
       <Route path='/:categoryId' element={<IntemListContainer/>}/>
       <Route path='/item/:idProduct' element={<ItemDetailContainer/>}/>
+
       <Route path='/Cart' element={<Cart />} />
 
     </Routes>
