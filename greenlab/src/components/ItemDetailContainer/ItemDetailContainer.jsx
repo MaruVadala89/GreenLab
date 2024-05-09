@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getDocs, getFirestore, doc } from 'firebase/firestore';
+import { getDoc, getFirestore, doc } from 'firebase/firestore';
 import { useParams } from 'react-router-dom';
 import ItemDetail from '../ItemDetail/ItemDetail';
 
@@ -13,12 +13,10 @@ const ItemDetailContainer = () => {
 
         const nuevoDoc = doc(db, "Productos", idProduct)
 
-        getDocs(nuevoDoc)
+        getDoc(nuevoDoc)
 
             .then((res) => {
-
-
-                const data = doc.data()
+                const data = res.data()
                 const nuevoProducto = { id: res.id, ...data }
                 setProduct(nuevoProducto)
 

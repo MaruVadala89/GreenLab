@@ -42,7 +42,6 @@ const Checkout = () => {
             email
         }
 
-        //GENERAMOS LOGICA PARA LA ORDEN Y REDUCCION DE STOCK
         Promise.all(
             orden.items.map(async (productoOrden) => {
                 const productoRef = doc(db, "Productos", productoOrden.id)
@@ -71,7 +70,6 @@ const Checkout = () => {
     }
 
     return (
-        //FORMULARIO
 
         <div>
             <h2>Ingresa tu formulario</h2>
