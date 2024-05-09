@@ -1,0 +1,13 @@
+.footer {
+    background-color: black;
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footerTitulo {
+    font-size: 14px;
+}
