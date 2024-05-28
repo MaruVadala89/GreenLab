@@ -21,3 +21,25 @@
   .detail-info-p {
     margin: 15px 0; 
   }
+
+  .cart-button {
+    background-color: #2196F3; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; 
+    text-decoration: none;
+  }
+
+  @media (max-width: 760px) {
+    .detail-container {
+      flex-direction: column;
+    }
+
+    .detail-img, .detail-info {
+      flex-basis: 100%;
+      max-width: 100%;
+      margin: 15px 0;
+    }
+  }
