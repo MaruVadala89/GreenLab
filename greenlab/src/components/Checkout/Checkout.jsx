@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { collection, addDoc, doc, getDoc, updateDoc, getFirestore } from 'firebase/firestore';
 import { CartContext } from '../../context/CartContext';
-
+import "./Checkout.css"
 const Checkout = () => {
 
     const [nombre, setNombre] = useState("");
@@ -72,7 +72,7 @@ const Checkout = () => {
     return (
 
         <div>
-            <h2>Ingresa tu formulario</h2>
+            <h2 className='title'>Ingresa tus datos para finalizar la compra: </h2>
 
             {
                 cart.map((producto) => {
@@ -87,7 +87,7 @@ const Checkout = () => {
                 })
             }
 
-            <form onSubmit={manejadorFormulario}>
+            <form className='checkout-form' onSubmit={manejadorFormulario}>
 
                 <div>
                     <label htmlFor="">Nombre</label>
