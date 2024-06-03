@@ -14,7 +14,7 @@ const Cart = () => {
 
             {
                 cart.length == 0 ?
-                    <div>
+                    <div className="cart-message">
                         <h2>No hay productos en el carrito</h2>
                         <Link to={"/"}>Ir al inicio</Link>
                     </div>

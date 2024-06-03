@@ -9,15 +9,37 @@
    animation: fadeIn 1s ease forwards;
 }
 
+.cart-message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-message h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cart-message a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #14b30e;
+    font-weight: bold;
+    height: 200px;
+    
+}
+
+
 @keyframes fadeIn {
     from{
         opacity: 0;
     }
     to {
         opacity: 1;
-    }
-    
+    }   
 }
+
+
 
 .clean-button {
     border: none;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore';
 import { useParams } from 'react-router-dom';
 import ItemList from '../ItemList/ItemList';
-
+import "./ItemListContainer.css"
 
 const IntemListContainer = () => {
     const [products, setProducts] = useState([])
@@ -40,7 +40,9 @@ const IntemListContainer = () => {
     return (
         <>
 
-            {loading ? (<h1>Cargando...</h1>) : (<ItemList products={products}/>)}
+            {loading ? 
+            
+            (<h3 className='cargando' style={{height:"1200px"}}>Cargando...</h3>) : (<ItemList products={products}/>)}
 
         </>
     );
