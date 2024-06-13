@@ -1,0 +1,37 @@
+.delate-button {
+    background-color: rgb(167, 182, 114);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.delate-button:hover {
+    opacity: 0.8;
+}
+
+.cart-item {
+
+    width: calc(25% - 32px);
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
